@@ -56,8 +56,23 @@
   justify-content: space-between;
   /* background-color: green; */
 }
+.ans-div{
+  font-size: 25px;
+  width: auto;
+  width: 100%; /* Keeps answer full width */
+  word-wrap: break-word; /* Forces long words to break */
+  overflow-wrap: break-word; /* Alternative for word breaking */
+
+}
 .ques-div{
   margin: 6px;
   font-size: 30px;
   /* background-color: blue; */
+  flex: 1; /* Ensures it doesn't grow */
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden; /* Hides overflow */
+  text-overflow: ellipsis; /* Adds "..." for overflow text */
+}
+.faq-box{
+  margin: auto; 
 }

@@ -8,10 +8,10 @@ function App() {
   
 
   return (
-    <>
-    <div className='main-div' >Frequently Asked Question</div>
-      <FAQComp></FAQComp>
-    </>
+    <div className="App">
+      <h1>Frequently Asked Question</h1>
+      <FAQComp />
+    </div>
   )
 }
 

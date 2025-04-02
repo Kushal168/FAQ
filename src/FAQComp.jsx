@@ -1,7 +1,7 @@
-import React from 'react'
-import FAQItem from './FAQItem'
+import FAQItem from "./FAQItem";
 
-export default function FAQComp() {
+
+const FAQComp = () => {
     const faqs = [
         {
             question: "How many bones does a cat have?",
@@ -16,12 +16,13 @@ export default function FAQComp() {
             answer: "Outdoor cats live 5 years on average. Indoor\ncats live 15 years on average.",
         },
     ]
-  return (<>
-    {
-        faqs.map((faq,index)=>{
-            return <FAQItem faq={faq} index={index} key ={index} />
-        })
-    }
+    return <>
+        {
+            faqs.map((faq, index) => {
+                return <FAQItem faq={faq} index={index} />
+            })
+        }
     </>
-  )
 }
+
+export default FAQComp;
